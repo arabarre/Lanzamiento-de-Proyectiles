@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lanzamiento de proyectiles</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<section class="section-title">
+		<div class="title">
+			<h1 class="presentacion">Lanzamiento de proyectiles</h1>
+
+		</div>
+	</section>
+
+	<section class="resolucion">
+		<div class="resolucion--interno">
+			<div class="datos">
+				<form class="formdatos">
+					<p>Ingrese la velocidad (m/s):
+						<input type="number" id="velocidad" min="1" max="1000" />
+					</p>
+					<p>Ingrese el ángulo (0--90°):
+						<input type="number" id="angulo" min="1" max="1000" />
+					</p>
+
+					<h3>¿Como desea la escala del trazado?</h3>
+					<input type="radio" name="scala" id="rMaximo" value="automatica" checked onclick="fAutomatica();" />Automatica
+					<input type="radio" name="scala" id="rMaximou" value="introducida" onclick="fIntroducida();" />Manual
+					<div>
+						<p>Distancia horizontal max.:</p> <input type="number" id="Rmaxima" />
+					</div>
+					<div>
+						<p>Distancia -vertical- max.: </p><input type="number" id="Hmaxima" />
+					</div>
+					<p><input type="button" value="Calcular" id="calcular" /></p>
+
+				</form>
+				<div class="solucion">
+					<h3>Solución</h3>
+					<div>
+						<p>Altura máxima (m): <span id="Hmax"></span></p>
+						<p>Alcance máximo (m): <span id="Rmax"></span> </p>
+						<p>Tiempo de vuelo <span id="TiempoVuelo"></span> </p>
+					</div>
+				</div>
+			</div>
+			<div id="graficoP">
+				<canvas id="grafico" width="600" height="480"></canvas>
+				<div class="nameGrafico">Gráfico del lanzamiento</div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<!-- Sección de Footer -->
+	<footer>
+		<div>&copy José L. Araujo B. - 2022</div>
+		<div class="imgfooter"><img id="linkedinf" src="./images/linkedin.png">
+			<a href="https://www.linkedin.com/in/jose-araujo-barrera" target="_blank">Linkedin</a>
+		</div>
+		<div class="imgfooter">
+			<img id="gitf" src='./images/gitB.png' />
+			<a href="https://github.com/arabarre?tab=repositories" target="_blank"> github</a>
+		</div>
+		<div class="imgfooter"><img id="correof" src="./images/correo-electronico.png">
+			<a href="mailto:arabarre52@gmail.com"> arabarre52@gmail.com</a>
+		</div>
+	</footer>
+	<script src="./pru/apps.js"></script>
+</body>
+
+</html>

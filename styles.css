@@ -1,0 +1,120 @@
+:root {
+	--fondo3: linear-gradient(270deg, #90ee90 0%, #ffffff 100%);
+}
+
+body {
+	background: var(--fondo3);
+}
+section.section-title {
+	display: flex;
+	justify-content: center;
+}
+.presentacion {
+	margin-bottom: 0;
+	margin-top: 0px;
+}
+
+div.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.resolucion {
+	margin-top: 10px;
+	margin-left: 4%;
+	margin-right: 4%;
+
+	border: 10px ridge #6666cc;
+}
+div.resolucion--interno {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 4%;
+	margin-right: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#calcular {
+	background-color: rgb(42, 122, 228);
+	color: white;
+	border: solid rgb(42, 122, 228);
+	border-width: 2px;
+	width: 6rem;
+	height: 2.5rem;
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+#graficoP {
+	width: 52%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#grafico {
+	width: 100%;
+}
+
+.nameGrafico {
+	margin-top: 1rem;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#correof,
+#linkedinf,
+#gitf {
+	height: 24px;
+	margin-right: 0.5rem;
+}
+
+.imgfooter {
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 1100px) {
+	div.resolucion--interno {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	div.datos {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.formdatos {
+		width: 60%;
+	}
+	.solucion {
+		width: 40%;
+	}
+
+	#graficoP {
+		width: 100%;
+	}
+}
+@media (max-width: 620px) {
+	div.datos {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+	.formdatos {
+		width: 100%;
+	}
+	.solucion {
+		width: 100%;
+	}
+	footer {
+		flex-direction: column;
+		justify-content: space-around;
+		margin-left: 2rem;
+	}
+}
